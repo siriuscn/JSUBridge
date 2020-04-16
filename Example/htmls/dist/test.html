@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HTML 测试页面</title>
+
+    <script src="jquery-2.1.3.min.js"></script>
+    
+    <script src="vconsole.min.js"></script>
+
+    <script>
+        var vConsole = new VConsole();
+    </script>
+    
+    <style>
+    html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    </style>
+</head>
+<body>
+<script>
+    window.jsfunc = function(callId, msg) {
+        console.log(callId)
+        console.log(msg)
+    }
+
+    function test(){
+        var obj = {
+            userId: $('#userId').val()
+        }
+        window.obj.fun("obj", JSON.stringify(obj))
+    }
+</script>
+<form name="nameform" action="">
+    <input type="text" id="userId" form="nameform" value="t0020"></input>
+    <button type="button" onclick=test()><strong>Test</strong></button><br>
+</form>
+</body>
+</html>

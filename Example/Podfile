@@ -1,0 +1,12 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'JSBridge_Example' do
+  pod 'JSBridge', :path => '../'
+
+  target 'JSBridge_Tests' do
+    inherit! :search_paths
+
+  end
+end
