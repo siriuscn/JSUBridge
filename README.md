@@ -1,11 +1,11 @@
 # JSBridge
 
-[![CI Status](https://img.shields.io/travis/siriuscn/JSBridge.svg?style=flat)](https://travis-ci.org/siriuscn/JSBridge)
-[![Version](https://img.shields.io/cocoapods/v/JSBridge.svg?style=flat)](https://cocoapods.org/pods/JSBridge)
-[![License](https://img.shields.io/cocoapods/l/JSBridge.svg?style=flat)](https://cocoapods.org/pods/JSBridge)
-[![Platform](https://img.shields.io/cocoapods/p/JSBridge.svg?style=flat)](https://cocoapods.org/pods/JSBridge)
+[![CI Status](https://img.shields.io/travis/siriuscn/JSUBridge.svg?style=flat)](https://travis-ci.org/siriuscn/JSUBridge)
+[![Version](https://img.shields.io/cocoapods/v/JSUBridge.svg?style=flat)](https://cocoapods.org/pods/JSUBridge)
+[![License](https://img.shields.io/cocoapods/l/JSUBridge.svg?style=flat)](https://cocoapods.org/pods/JSUBridge)
+[![Platform](https://img.shields.io/cocoapods/p/JSUBridge.svg?style=flat)](https://cocoapods.org/pods/JSUBridge)
 
-JSBridge is an universal framework for `iOS` and `macOS`. It helps JavaScript programmer to develop apps without checking whether the running OS is `iOS` / `macOS` nor `Android` anymore! It is intended to be simple, lightweight, and easy to use.
+JSUBridge is an universal framework for `iOS` and `macOS`. It helps JavaScript programmer to develop apps without checking whether the running OS is `iOS` / `macOS` nor `Android` anymore! It is intended to be simple, lightweight, and easy to use.
 
 ## Example
 
@@ -52,7 +52,7 @@ JSBridge is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'JSBridge', '~> 1.0.0'
+pod 'JSUBridge', '~> 1.0.0'
 ```
 
 ## Requirements
