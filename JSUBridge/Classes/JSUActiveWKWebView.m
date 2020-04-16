@@ -1,20 +1,20 @@
 //
-//  JSBActiveWKWebView.m
-//  JSBridge
+//  JSUActiveWKWebView.m
+//  JSUridge
 //
 //  Created by sirius on 2020/1/2.
 //  Copyright © 2020 sirius. All rights reserved.
 //
 
-#import "JSBActiveWKWebView.h"
+#import "JSUActiveWKWebView.h"
 
-@interface JSBActiveWKWebView ()
+@interface JSUActiveWKWebView ()
 #if !TARGET_OS_IPHONE
 @property (copy) NSArray<NSMenuItem *> *itemArray;
 #endif
 @end
 
-@implementation JSBActiveWKWebView
+@implementation JSUActiveWKWebView
 
 #if !TARGET_OS_IPHONE
 @dynamic menu;

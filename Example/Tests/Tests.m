@@ -1,6 +1,6 @@
 //
-//  JSBridgeTests.m
-//  JSBridgeTests
+//  JSUBridgeTests.m
+//  JSUBridgeTests
 //
 //  Created by siriuscn on 04/16/2020.
 //  Copyright (c) 2020 siriuscn. All rights reserved.

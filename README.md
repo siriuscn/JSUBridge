@@ -1,4 +1,4 @@
-# JSBridge
+# JSUBridge
 
 [![CI Status](https://img.shields.io/travis/siriuscn/JSUBridge.svg?style=flat)](https://travis-ci.org/siriuscn/JSUBridge)
 [![Version](https://img.shields.io/cocoapods/v/JSUBridge.svg?style=flat)](https://cocoapods.org/pods/JSUBridge)
@@ -26,13 +26,13 @@ window.callback = func(arg1, arg2) {
 
 Native Objective-C codes can be implemented as below:
 ```objc
-self.webViewBuilder = [[JSBWebViewBuilder alloc] init];
+self.webViewBuilder = [[JSUWebViewBuilder alloc] init];
 self.webViewBuilder.debugable = YES;
 
 __weak typeof(self) weakSelf = self;
 [self.webViewBuilder setObjectName:@"obj" functionName:@"fun" invoking:^(NSArray<id> *args) {
     NSString *message = @"string";
-    NSString *escaped = JSBArgumentGetEscapedFromString(message);
+    NSString *escaped = JSUArgumentGetEscapedFromString(message);
     NSString *script = [NSString stringWithFormat:@"jsfunc(%d, \"%@\")", 33, escaped];
     [weakSelf.webViewBuilder evaluateJavaScript:script completionHandler:^(id _Nullable res, NSError * _Nullable error) {
     }];
@@ -48,7 +48,7 @@ self.webViewBuilder.webView.autoresizingMask = UIViewAutoresizingFlexibleWidth |
 
 ## Installation
 
-JSBridge is available through [CocoaPods](https://cocoapods.org). To install
+JSUBridge is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -57,7 +57,7 @@ pod 'JSUBridge', '~> 1.0.0'
 
 ## Requirements
 
-| JSBridge Version | Minimum iOS Target  | Minimum macOS Target   |                                   Notes                                   |
+| JSUBridge Version | Minimum iOS Target  | Minimum macOS Target   |                                   Notes                                   |
 |:--------------------:|:---------------------------:|:----------------------------:|:----------------------------:|:----------------------------:|:-------------------------------------------------------------------------:|
 | 1.x | iOS 8 | macOS 10.10  | Xcode 11+ is required. |
 
@@ -69,7 +69,7 @@ sirius ( siruscn ) , 331862034@qq.com
 
 ## License
 
-JSBridge is available under the MIT license. See the LICENSE file for more info.
+JSUBridge is available under the MIT license. See the LICENSE file for more info.
 
     Copyright (c) 2020 sirius <331862034@qq.com>
 

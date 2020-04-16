@@ -1,6 +1,6 @@
 //
-//  JSBWebLoadingProtocol.h
-//  JSBridge
+//  JSUWebLoadingProtocol.h
+//  JSUridge
 //
 //  Created by sirius on 2020/1/7.
 //  Copyright © 2020 sirius. All rights reserved.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol JSBWebLoadingProtocol <NSObject>
+@protocol JSUWebLoadingProtocol <NSObject>
 - (nullable id)loadRequest:(NSURLRequest *)request;
 @end
 

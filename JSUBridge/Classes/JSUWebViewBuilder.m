@@ -1,22 +1,22 @@
 //
-//  JSBWebViewController.m
-//  JSBridge
+//  JSUWebViewController.m
+//  JSUridge
 //
 //  Created by sirius on 2020/1/2.
 //  Copyright © 2020 sirius. All rights reserved.
 //
 
-#import "JSBWebViewBuilder.h"
-#import "JSBJavaScriptHandler.h"
-#import "JSBActiveWKWebView.h"
+#import "JSUWebViewBuilder.h"
+#import "JSUJavaScriptHandler.h"
+#import "JSUActiveWKWebView.h"
 
 API_AVAILABLE(macos(10.10), ios(8.0))
-@interface JSBWebViewBuilder ()
-@property (strong, nonatomic) JSBJavaScriptHandler *handler;
+@interface JSUWebViewBuilder ()
+@property (strong, nonatomic) JSUJavaScriptHandler *handler;
 @property (strong, nonatomic) WKWebViewConfiguration *configuration;
 @end
 
-@implementation JSBWebViewBuilder
+@implementation JSUWebViewBuilder
 
 - (instancetype)init {
     self = [super init];
@@ -52,7 +52,7 @@ API_AVAILABLE(macos(10.10), ios(8.0))
         WKUserContentController *userContentController = [[WKUserContentController alloc] init];
         self.configuration.userContentController = userContentController;
         
-        self.handler = [[JSBJavaScriptHandler alloc] initWithUserContentController:userContentController];
+        self.handler = [[JSUJavaScriptHandler alloc] initWithUserContentController:userContentController];
     }
 }
 
@@ -68,12 +68,12 @@ API_AVAILABLE(macos(10.10), ios(8.0))
     
 #if !TARGET_OS_IPHONE
     if (@available(macOS 10.10, *)) {
-        self.webView = [[JSBActiveWKWebView alloc] initWithFrame:NSZeroRect configuration:self.configuration];
+        self.webView = [[JSUActiveWKWebView alloc] initWithFrame:NSZeroRect configuration:self.configuration];
         self.webView.autoresizingMask = NSViewWidthSizable | NSViewHeightSizable;
     }
 #else
     if (@available(iOS 8.0, *)) {
-        self.webView = [[JSBActiveWKWebView alloc] initWithFrame:CGRectZero configuration:self.configuration];
+        self.webView = [[JSUActiveWKWebView alloc] initWithFrame:CGRectZero configuration:self.configuration];
         self.webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     }
 #endif

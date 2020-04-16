@@ -1,6 +1,6 @@
 //
-//  JSBWebViewController.h
-//  JSBridge
+//  JSUWebViewController.h
+//  JSUridge
 //
 //  Created by sirius on 2020/1/2.
 //  Copyright © 2020 sirius. All rights reserved.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
 
-#import "JSBWebKitUtils.h"
+#import "JSUWebKitUtils.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @author sirius
 */
-@interface JSBWebViewBuilder : NSObject
+@interface JSUWebViewBuilder : NSObject
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunguarded-availability"
@@ -70,7 +70,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  If a NSString object is desired to be passed to JavaScript function as the argument,
  *      it must be escaped the characters ( \ and " ).
  *
- * @c NSString *escaped = JSBArgumentGetEscapedFromString(str);
+ * @c NSString *escaped = JSUArgumentGetEscapedFromString(str);
  * @c NSString *script = [NSString stringWithFormat:@"js_func(%d, %@, \"%@\")", int, number, escaped];
  *
  * @param javaScriptString      The JavaScript string to evaluate.

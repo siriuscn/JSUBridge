@@ -1,6 +1,6 @@
 //
-//  JSBJavaScriptHandler.h
-//  JSBridge
+//  JSUJavaScriptHandler.h
+//  JSUridge
 //
 //  Created by sirius on 2020/1/2.
 //  Copyright © 2020 sirius. All rights reserved.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JSBJavaScriptHandler : NSObject
+@interface JSUJavaScriptHandler : NSObject
 
 - (instancetype)initWithUserContentController:(WKUserContentController *)userContentController API_AVAILABLE(macos(10.10), ios(8.0));
 

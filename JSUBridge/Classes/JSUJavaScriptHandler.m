@@ -1,20 +1,20 @@
 //
-//  JSBJavaScriptHandler.m
-//  JSBridge
+//  JSUJavaScriptHandler.m
+//  JSUridge
 //
 //  Created by sirius on 2020/1/2.
 //  Copyright © 2020 sirius. All rights reserved.
 //
 
-#import "JSBJavaScriptHandler.h"
+#import "JSUJavaScriptHandler.h"
 
 API_AVAILABLE(macos(10.10), ios(8.0))
-@interface JSBJavaScriptHandler () <WKScriptMessageHandler>
+@interface JSUJavaScriptHandler () <WKScriptMessageHandler>
 @property (nonatomic, strong) NSMutableDictionary<NSString *, void (^)(NSArray<id> *)> *invokings;
 @property (nonatomic, weak) WKUserContentController *userContentController;
 @end
 
-@implementation JSBJavaScriptHandler
+@implementation JSUJavaScriptHandler
 
 - (instancetype)initWithUserContentController:(WKUserContentController *)userContentController  API_AVAILABLE(macos(10.10), ios(8.0)) {
     self = [super init];
