@@ -3,6 +3,7 @@
 # * https://github.com/supermarin/xcpretty#usage
 
 osx_image: xcode11.3.1
+os: ios
 language: objective-c
 cache: cocoapods
 podfile: Example/Podfile
